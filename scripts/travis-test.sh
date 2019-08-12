@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 out=$(curl -i http://localhost | grep "HTTP/1.1 200 OK")
 
 # we should check out == hello
