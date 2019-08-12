@@ -1,6 +1,5 @@
-Kitchen test using terraform
+Simple page showing hello world written on php
 
-Simple kitchen test code for checking ami image
 pre-requirements
 
     Install Vagrant
@@ -15,12 +14,11 @@ Windows 	Start menu -> Run and type cmd
 Linux 	Start terminal
 macOS 	Press Command - spacebar to launch Spotlight and type "Terminal," then double-click the search result.
 
-    Pupulate variables in testing.tfvars
-
+Clone the code locally:
     git clone https://github.com/yaroslav-007/app-hello-php.git
     cd app-hello-php
 
-Start vagrant
+Start vagrant:
 
     vagrant up
 
