@@ -2,7 +2,7 @@ language: bash
 dist: xenial
 sudo: enabled
 before_script:
-- sudo bash ./scripts/install_php.sh 
-- sudo bash ./scripts/deploy_website.sh
+- sudo bash ./scripts/install_php.sh $PWD
+- sudo bash ./scripts/deploy_website.sh $PWD
 script:
 - sudo bash ./scripts/travis-test.sh
