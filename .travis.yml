@@ -1,4 +1,4 @@
-language: generic
+language: bash
 dist: xenial
 sudo: enabled
 before_script:
