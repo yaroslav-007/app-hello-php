@@ -2,8 +2,8 @@ language: generic
 dist: xenial
 sudo: required
 before_script:
-- sudo  bash ./scripts/install_php.sh
-- sudo ./scripts/deploy_website.sh
+- sudo bash ./scripts/install_php.sh ~/yaroslav-007/app-hello-php
+- sudo bash ./scripts/deploy_website.sh ~/yaroslav-007/app-hello-php
 script:
 - sudo bash ./scripts/travis-test.sh
 deploy:

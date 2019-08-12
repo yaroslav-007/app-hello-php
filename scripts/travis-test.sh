@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-sudo git clone --depth=50 https://github.com/yaroslav-007/app-hello-php.git /vagrant
 out=$(curl -i http://localhost | grep "HTTP/1.1 200 OK")
 
 # we should check out == hello
