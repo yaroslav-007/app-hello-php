@@ -2,7 +2,8 @@ language: bash
 dist: xenial
 sudo: enabled
 before_script:
-- bash ~/yaroslav-007/app-hello-php/scripts/install_php.sh ~/yaroslav-007/app-hello-php
-- bash ~/yaroslav-007/app-hello-php/scripts/deploy_website.sh ~/yaroslav-007/app-hello-php
+- pwd
+- ls -al
+- tree
 script:
 - sudo bash ./scripts/travis-test.sh
