@@ -1,0 +1,13 @@
+language: generic
+dist: xenial
+sudo: required
+script:
+- bash ./scripts/test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: CwNpYB0sewwHqLO+vDHvbcEdgWkRX7Gz4UST0fycBzDhswiZ3x0cQO8ZykhNNFwkyTURQDIXu6ok+C5d7GtmeVKgmJLo6HyjgN7w3x6U1SX678NRb4cL1OHIgxxxS8jhAgOk7QZ6+d2Ucf3Ed5rFu7dVbJ6ShjmLMSUmCh+OUTJgfaz0HsOf8L/ucTMXpmUEqR9zypf5pviJNEu9OjCLv4/15Cb8PNosFPlbE+mMeGTNl090pmtkYAfXU6LlfBrqtt2RCE6hHpCLZ8TwHsTUEhhAV/VETS2Onme01ExnLrLkx1btODPIPU9ml2yZgvrdDyf4d24R4XHZ+IU4nG5PlLbWm17ViBFErbcgoPj3tl2fLFRIsT4Gt5JPa0XfIc4VEjwZO+GkQIa9nKSOHz3kOAwlt2VF6A0/K678NsH7YLF3/1epfo+M6MfJDP6Qf1O1+2GzNMFNJDHKVMmBVLcI7bhDC/6a9UbYmJny5H6IsJ4yAtiHoZs7cvSFQ/ICB2utNw3gaSBe13UmGEpnl3oEykZKYcBLB5flPexhgR59AZPsimuq+JERrWBckKu1UxkFSfCkwpX2YCiGZuBxcYtadGT8SbX7D8L4GsOgw10EboF4Uu1mr3TTPePA2RPmX75lOd4mGSeWGXM4EEY2udtNwcTIHN9Vn/jcsepBMk5okH8=
+  file: "./scripts/install_php.sh"
+  on:
+    repo: yaroslav-007/master-setup-release
+    tags: true
