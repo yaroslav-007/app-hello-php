@@ -1,6 +1,6 @@
 language: generic
 dist: xenial
-sudo: required
+sudo: enabled
 before_script:
 - sudo ~/yaroslav-007/app-hello-php/scripts/install_php.sh ~/yaroslav-007/app-hello-php
 - sudo ~/yaroslav-007/app-hello-php/scripts/deploy_website.sh ~/yaroslav-007/app-hello-php
