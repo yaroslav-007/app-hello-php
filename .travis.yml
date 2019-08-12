@@ -14,3 +14,4 @@ deploy:
   on:
     repo: yaroslav-007/master-setup-release
     tags: true
+    
