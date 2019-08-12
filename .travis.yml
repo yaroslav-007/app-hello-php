@@ -2,7 +2,7 @@ language: generic
 dist: xenial
 sudo: required
 script:
-- bash ./scripts/test.sh
+- bash ./scripts/travis-test.sh
 deploy:
   provider: releases
   api_key:
