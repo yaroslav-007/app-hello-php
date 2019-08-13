@@ -1,5 +1,3 @@
-
-
 # Simple page showing hello world written on php
 This is project that runs simple php web page via vagrant.
 

@@ -1,0 +1,16 @@
+language: bash
+dist: xenial
+sudo: enabled
+before_script:
+- sudo bash ./scripts/install_php.sh $PWD
+- sudo bash ./scripts/deploy_website.sh $PWD
+script:
+- sudo bash ./scripts/travis-test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: cE8jd39vOoFY6ngt7SLbUL32MhlaYIYe2k+6hwRm9oVlkiA52JyXucMD5ggy4FPKMs9BlQGRiH0EdOthmvT9WcwveW6vuPQygLAVUKErZlui6sPgZrJN1fPerofWUGcqRxRUk8rfuD+yRCs06boP1ZgFPhWtKdlBDt2aoK8fN6FyJEHwx6aWXhbUTFCZMD6UfJ27E1+fXWQwh7f0ZUvYRGud8lF81eAMSwgfLhUN/1mNiZkzB737hOxFXGDsqMr9Y7v5wpf3RMBG3OJLT/g3aRix6pZUq6q/sVx4KnsFW8bOdT4qsTIlDodEtlwsVDeyu8sbnXM9hwEXrhjExxOhr8wsYSYtEJCQZDZMcuVZlwULt3SDoZM8EJpKt1uuUJhUCS18RLPVm3QKdwVE3Iz1W0vC2nWSBIjsl7PsgZuuVUdOZXioIR+pnaPwgkCul8tReBCQ/A2skHN2w8QswYoOxpxsm3qbkWGy3QXJlLfHyKqnCehtNqE78eEJgOzTr7WppoUj1tW9paSIb2zJFgnXUBnLoBvJUTfQVtDqe925fcJvhEFthMORMD2iJWtF0qqSflPcMAuhjW6O156W+vTnIyN4IppTs7wjMm2WONHm9ppJn2CNCetblFpGU2dKAU7ArofB09lw3tSsbvUpaUtozPEC7Gp4TKf+wX9A1duQ4lI=
+  file: ''
+  on:
+    repo: yaroslav-007/app-hello-php
+    tags: true
