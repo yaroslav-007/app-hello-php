@@ -7,7 +7,7 @@ before_script:
 script:
 - sudo bash ./scripts/travis-test.sh
 before_deploy:
-- zip -r app-hello-php.zip conf/nginx.conf html/index.php
+- zip -r app-hello-php.zip conf/ html/
 
 deploy:
   provider: releases
