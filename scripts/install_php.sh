@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x
 
 apt-get update
 apt-get -y install nginx php php-fpm curl
