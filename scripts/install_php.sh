@@ -4,7 +4,7 @@ set -x
 # install nginx and php
 apt-get update
 apt-get -y install nginx curl
-apt-get -y install nginx php-fpm
+apt-get -y install php-fpm
 
 systemctl stop nginx
 
