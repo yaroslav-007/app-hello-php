@@ -1,5 +1,5 @@
 language: bash
-dist: xenial
+dist: bionic
 sudo: enabled
 before_script:
 - sudo bash ./scripts/install_php.sh
