@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-    config.vm.box = "vatman/xenial64"
+    config.vm.box = "ubuntu/bionic64"
     config.vm.provision "shell", path: "./scripts/install_php.sh"
     config.vm.provision "shell", path: "./scripts/deploy_website.sh"
     config.vm.define "hello-php" do |c1|
