@@ -9,7 +9,7 @@ apt-get -y install php-fpm
 systemctl stop nginx
 
 # remove default config
-[ -f /etc/nginx/sites-enabled//default ] && unlink /etc/nginx/sites-enabled//default
+[ -f /etc/nginx/sites-enabled/default ] && unlink /etc/nginx/sites-enabled/default
 
 # change dir to /vagrant if we are in a vagrant vm
 [ -d /vagrant ] && pushd /vagrant
