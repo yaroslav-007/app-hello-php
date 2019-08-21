@@ -2,9 +2,10 @@
 set -x
 
 # install nginx and php
-apt-get update
-apt-get -y install nginx curl
-apt-get -y install php-fpm
+which nginx php curl || {
+  apt-get update
+  apt-get -y install nginx curl php-fmp
+}
 
 systemctl stop nginx
 
